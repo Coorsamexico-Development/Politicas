@@ -85,27 +85,22 @@
     </section>
       ============================-->
     <main id="main">
+        <section class="menu_politics">
+                <ul id="portfolio-flters"
+                 style="">
+                    <li data-filter="*" class="filter-active">Todas</li>
+                     {{--  <li data-filter=".filter-Covid">Covid</li>
+                     <li data-filter=".filter-Reglamentos">Reglamentos</li>
+                     <li data-filter=".filter-Políticas">Políticas</li>
+                     <li data-filter=".filter-Revision">En revision</li>
+                     <li data-filter=".filter-Formatos">Formatos</li>  --}}
+                  </ul> 
+        </section>
         <!--==========================
-      Portfolio Section
+         Portfolio Section
         ============================-->
         <section id="portfolio" class="section-bg">
-            <div class="container">
-                <header class="section-header">
-                    <h3 class="section-title">Políticas</h3>
-                </header>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">Todas</li>
-                            {{--  <li data-filter=".filter-Covid">Covid</li>
-                            <li data-filter=".filter-Reglamentos">Reglamentos</li>
-                            <li data-filter=".filter-Políticas">Políticas</li>
-                            <li data-filter=".filter-Revision">En revision</li>
-                            <li data-filter=".filter-Formatos">Formatos</li>  --}}
-                        </ul>
-                    </div>
-                </div>
-                
+            <div class="container">   
                 <div id="cont-politics" class="row portfolio-container" style="position: relative; height: 0px;">
                 </div>
             </div>

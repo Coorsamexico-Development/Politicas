@@ -172,11 +172,49 @@ h6 {
 # Intro Section
 --------------------------------------------------------------*/
 
+.menu_politics
+{
+  background-image: url('../img/new_images/fondo.png');
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2,1fr);
+  background-repeat: no-repeat;
+  background-color: white;
+  width: auto;
+  background-size: cover;
+  height: 40rem;
+}
+
+#main .menu_politics #portfolio-flters
+{
+  list-style: none;
+  grid-column:4/6;
+  grid-row:2/6
+}
+
+#main .menu_politics #portfolio-flters li
+{
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #666666;
+  border: 4px solid #18d26e;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  background: transparent;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+}
+/*CAMBIOS SIN TOCAR*/
+
 #intro {
   display: table;
   width: 100%;
   height: 100vh;
-  background: #000;
+
 }
 
 #intro .carousel-item {
