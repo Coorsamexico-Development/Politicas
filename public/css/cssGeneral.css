@@ -1,0 +1,34 @@
+table tr th{
+    background:#f39c12;
+    color: azure;
+}
+
+.overlay{
+    position: absolute;
+    background-color: white;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+  }
+
+h3{
+    color:coral; 
+    font-weight: 900;
+    margin-top: 100px;
+}
+a:hover{
+    cursor: pointer;
+    color: #333 !important;
+}
+.zmdi:hover{
+  color: green;
+  cursor: pointer;
+}
+#portadaNoti{
+    width: 100%;
+    width: 100px;
+    height:70px;
+    border-radius: 5px;
+}
