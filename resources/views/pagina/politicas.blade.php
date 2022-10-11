@@ -53,7 +53,9 @@
                         </ul>
                     </li>
                     <li><a href="#portfolio">Políticas</a></li>
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline"><img src="img/login.png" width="100"></a>
+                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">
+                        Iniciar sesion
+                    </a>
                 </ul>
             </nav>
             <!-- #nav-menu-container -->
@@ -63,6 +65,7 @@
     <!--==========================
     Intro Section
   ============================-->
+   <!--==========================
     <section id="intro">
         <div class="intro-container">
             <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
@@ -80,6 +83,7 @@
             </div>
         </div>
     </section>
+      ============================-->
     <main id="main">
         <!--==========================
       Portfolio Section
