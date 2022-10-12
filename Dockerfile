@@ -30,7 +30,7 @@ RUN cd /app && \
 RUN cd /app && \
     /usr/local/bin/npm ci
 RUN cd /app && \
-    /usr/local/bin/npm run build
+    /usr/local/bin/npm run production
 
 
 
