@@ -54,6 +54,17 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
         ],
 
+        'gcs' => [
+          'driver' => 'gcs',
+          'key_file_path' => env('GOOGLE_CLOUD_KEY_FILE'), // optional: /path/to/service-account.json
+          'key_file' => [], // optional: Array of data that substitutes the .json file (see below)
+          'project_id' => env('GOOGLE_CLOUD_PROJECT_ID'), // optional: is included in key file
+          'bucket' => env('GOOGLE_CLOUD_STORAGE_BUCKET'),
+          'path_prefix' => env('GOOGLE_CLOUD_STORAGE_PATH_PREFIX'), // optional: /default/path/to/apply/in/bucket
+          'apiEndpoint' => env('GOOGLE_CLOUD_STORAGE_API_URI'), // see: Public URLs below
+          'visibility' => 'public', // optional: public|private
+          'metadata' => ['cacheControl'=> 'public,max-age=86400'], // optional: default metadata
+        ]
     ],
 
     /*
