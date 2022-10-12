@@ -15,6 +15,9 @@
     <link href="img/apple-touch-icon.html" rel="apple-touch-icon">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <!--Fonts-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Libraries CSS Files -->
@@ -39,11 +42,15 @@
     <header id="header">
         <div class="container-fluid">
             <div id="logo" class="pull-left">
-                <a href="#intro" class="scrollto"><img src="img/coorsa.png" width="160"></a>
+                <a href="#intro" class="scrollto">
+                    <img class="img_logo" src="img/new_images/logo_coorsa_blanco.png" >
+                </a>
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="#intro">Inicio</a></li>
+                    <li class="menu-active" >
+                        <a href="#intro">Inicio</a>
+                    </li>
                     <li class="menu-has-strong"><a href="#">FINIQUITOS</a>
                         <ul>
                             @foreach ($respuesta->finiquitos as $finiquito)
@@ -53,7 +60,13 @@
                         </ul>
                     </li>
                     <li><a href="#portfolio">Políticas</a></li>
-                    <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">
+                    <a href="{{ route('login') }}" 
+                     class="text-sm text-gray-700 underline"
+                     style="border: 0.2rem solid #3072DB;
+                            border-radius: 1rem;
+                            padding: 0.3rem 1rem 0.3rem 1rem;
+                            margin-left: 8rem; 
+                            margin-right:2rem;">
                         Iniciar sesion
                     </a>
                 </ul>
@@ -86,9 +99,17 @@
       ============================-->
     <main id="main">
         <section class="menu_politics">
-                <ul id="portfolio-flters"
-                 style="">
-                    <li data-filter="*" class="filter-active">Todas</li>
+            <div class="group_text">
+                <h4 class="text1">BIENVENIDO A</h4>
+                <h2 class="text1">Plataforma de Control Interno.</h2>
+                <p>Creación y seguimiento de los<br>
+                    procesos políticas, manuales, normas y métodos<br>
+                    estratégicos, de la empresa todo con la finalidad<br>
+                    de llegar al plan estratégico de esta.
+                </p>
+            </div>
+                <ul id="portfolio-flters">
+                    <li data-filter="*" class="item-todas filter-active" >Todas</li>
                      {{--  <li data-filter=".filter-Covid">Covid</li>
                      <li data-filter=".filter-Reglamentos">Reglamentos</li>
                      <li data-filter=".filter-Políticas">Políticas</li>
@@ -99,7 +120,7 @@
         <!--==========================
          Portfolio Section
         ============================-->
-        <section id="portfolio" class="section-bg">
+        <section id="portfolio" class="section-bg" style="margin-top: -2rem">
             <div class="container">   
                 <div id="cont-politics" class="row portfolio-container" style="position: relative; height: 0px;">
                 </div>

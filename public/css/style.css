@@ -1,7 +1,11 @@
 
+:root{
+  --fuentePrincipal: 'Montserrat'!important;
+}
+
 body {
-  background: black;
-  color: #666666;
+  
+  
   font-family: "Open Sans", sans-serif;
 }
 
@@ -133,6 +137,8 @@ h6 {
   right: 0;
   transition: all 0.5s;
   z-index: 997;
+  border-bottom: 0.1rem whitesmoke solid;
+  
 }
 
 #header.header-scrolled {
@@ -174,15 +180,22 @@ h6 {
 
 .menu_politics
 {
-  background-image: url('../img/new_images/fondo.png');
+
   display: grid;
   grid-template-columns: repeat(5,1fr);
   grid-template-rows: repeat(2,1fr);
   background-repeat: no-repeat;
-  background-color: white;
   width: auto;
   background-size: cover;
   height: 40rem;
+}
+
+#main{
+  background-image: url(../img/new_images/fondo.png);
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #dedede;
 }
 
 #main .menu_politics #portfolio-flters
@@ -197,7 +210,7 @@ h6 {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 0.1rem;
   font-size: 12px;
   line-height: 20px;
   color: #666666;
@@ -207,7 +220,88 @@ h6 {
   background: transparent;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
+
+.group_text
+{
+  grid-column: 2/4;
+  grid-row: 2/3;
+  margin-top: -4rem;
+  color: white;
+  font-family: var(--fuentePrincipal);
+}
+
+.group_text .text1
+{
+  font-weight: bolder;
+}
+
+#portfolio-flters {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(6,1fr);
+  margin-top: -4rem;
+}
+
+.item-todas{
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+
+.item-Reglamentos {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+
+.item-Covid
+{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.item-Políticas{
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.item-Formatos{
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+
+.item-Procesos{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.item-Comunicados{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.item-Plan.de.Acción{
+ grid-column: 3/4;
+ grid-row: 4/5;
+}
+
+.item-Guías{
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+.item-Plantillas{
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.item-Directorio{
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+
 /*CAMBIOS SIN TOCAR*/
 
 #intro {
@@ -421,8 +515,8 @@ h6 {
   display: inline-block;
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
+  /*font-weight: 700;*/
+  font-size: 1rem;
   text-transform: uppercase;
   outline: none;
 }
@@ -941,8 +1035,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 
-#portfolio {
-  padding: 60px 0;
+#portfolio{
+  background: transparent;
+
 }
 
 #portfolio #portfolio-flters {
@@ -960,7 +1055,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 12px;
   line-height: 20px;
   color: #666666;
-  border-radius: 4px;
+  border-radius: 500px;
   text-transform: uppercase;
   background: #fff;
   margin-bottom: 5px;
@@ -978,8 +1073,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #portfolio .portfolio-wrap {
-  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
   transition: 0.3s;
+  border-radius: 4rem;
 }
 
 #portfolio .portfolio-wrap:hover {
@@ -997,7 +1093,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   overflow: hidden;
   height: 240px;
   position: relative;
-  border-radius: 4px 4px 0 0;
+  border-radius: 2rem 2rem 0 0;
   margin: 0;
 }
 
@@ -1062,7 +1158,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   padding: 30px;
   height: 90px;
-  border-radius: 0 0 3px 3px;
+  border-radius: 0 0 4rem 4rem;
 }
 
 #portfolio .portfolio-item .portfolio-info h4 {

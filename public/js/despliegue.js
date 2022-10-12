@@ -14,7 +14,7 @@ function firstLastFive(){
                    }else{
                     html +='<div class="carousel-item"><div class="carousel-background">';
                    }
-               html +='<img src="'+datos.imagePolitic+'" alt="" width="100%">'+
+               html +=
                '</div><div class="carousel-container"><div class="carousel-content">'+
                 '<h2>'+datos.namepolitica+'</h2>';
                 if(datos.statu==1){
@@ -48,9 +48,8 @@ function tipoPoliticas(){
             var html ='';
             $.each(data, function( index, datos ) {
                  
-               html +='<li data-filter=".filter-'+datos.name+'">'+datos.name+'</li>';
+               html +='<li data-filter=".filter-'+datos.name+'" class="item-'+datos.name+'">'+datos.name+'</li>';
             
-
             });
             $('#portfolio-flters').append(html);
             publicadas();
@@ -75,13 +74,13 @@ function publicadas(){
 
         $.each(data, function( index, datos ) {
             if(datos.statu==1){
-                html+='<div class="col-lg-4 col-md-6 portfolio-item filter-Revision';
+                html+='<div class="col-lg-4 col-md-4 portfolio-item filter-Revision';
             }else{
-                html+='<div class="col-lg-4 col-md-6 portfolio-item filter-'+
+                html+='<div class="col-lg-3 col-md-4 portfolio-item filter-'+
                 datos.name;
             }
 
-            html+=' wow fadeInUp" data-wow-delay="0.1s"><div class="portfolio-wrap"><figure>'+
+            html+=' wow fadeInUp" data-wow-delay="0.1s"><div class="portfolio-wrap"><figure class="prueba">'+
                 '<img src="'+datos.imagePolitic+'" class="img-fluid" alt="" width="100%">';
             console.log(datos);
 
