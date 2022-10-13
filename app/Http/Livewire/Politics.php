@@ -77,12 +77,14 @@ class Politics extends Component
         ]);
 
 
-		$this->imagePolitic = $this->imagePolitic->store('imagePolitic', 'public');
-
-		$this->pdf = $this->pdf->store('pdf', 'public');
 		
 		
+		$disk = Storage::disk('gcs');
+        $this->imagePolitic  = $disk->url($this->imagePolitic->store('imagePolitic', 'gcs'));
+		
 
+		$this->pdf = $disk->url($this->pdf->store('pdf', 'gcs'));
+		
 
         Politic::create([ 
 			'namepolitica' => $this-> namepolitica,
@@ -132,11 +134,11 @@ class Politics extends Component
         if ($this->selected_id) {
 			$record = Politic::find($this->selected_id);
 			if(!empty($this->imagePolitic)){
-				Storage::disk('public')->delete($record->imagePolitic);
+				Storage::disk('gcs')->delete($record->imagePolitic);
 				$record->imagePolitic = $this->imagePolitic->store('imagePolitic', 'public');
 			}
 			if(!empty($this->pdf)){
-				Storage::disk('public')->delete($record->pdf);	
+				Storage::disk('gsc')->delete($record->pdf);	
 				$record->pdf = $this->pdf->store('pdf', 'public');
 	
 			}
@@ -161,8 +163,8 @@ class Politics extends Component
     {
         if ($id) {
             $record = Politic::find($id);
-			Storage::disk('public')->delete($record->imagePolitic);
-			Storage::disk('public')->delete($record->pdf);
+			Storage::disk('gcs')->delete($record->imagePolitic);
+			Storage::disk('gcs')->delete($record->pdf);
             $record->delete();
         }
     }
