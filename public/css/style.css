@@ -194,7 +194,7 @@ h6 {
   background-image: url(../img/new_images/fondo.png);
     /* background-color: transparent; */
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-color: #dedede;
 }
 
