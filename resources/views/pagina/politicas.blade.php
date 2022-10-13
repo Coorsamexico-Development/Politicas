@@ -102,10 +102,9 @@
             <div class="group_text">
                 <h4 class="text1">BIENVENIDO A</h4>
                 <h2 class="text1">Plataforma de Control Interno.</h2>
-                <p>Creación y seguimiento de los<br>
-                    procesos políticas, manuales, normas y métodos<br>
-                    estratégicos, de la empresa todo con la finalidad<br>
-                    de llegar al plan estratégico de esta.
+                <p style="text-align: justify">Creación, actualización y seguimiento de los procesos, políticas, manuales,
+                     normas y métodos estratégicos de la empresa, todo con la finalidad 
+                     de asegurar el cumplimiento de la normatividad con la que se rige la COORSA.
                 </p>
             </div>
                 <ul id="portfolio-flters">
