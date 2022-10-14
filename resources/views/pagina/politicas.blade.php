@@ -119,7 +119,7 @@
         <!--==========================
          Portfolio Section
         ============================-->
-        <section id="portfolio" class="section-bg" style="margin-top: -2rem">
+        <section id="portfolio" class="section-bg" style="margin-top: 3rem">
             <div class="container">   
                 <div id="cont-politics" class="row portfolio-container" style="position: relative; height: 0px;">
                 </div>
