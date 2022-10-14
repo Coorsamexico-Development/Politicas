@@ -104,7 +104,7 @@
                 <h2 class="text1">Plataforma de Control Interno.</h2>
                 <p style="text-align: justify">Creación, actualización y seguimiento de los procesos, políticas, manuales,
                      normas y métodos estratégicos de la empresa, todo con la finalidad 
-                     de asegurar el cumplimiento de la normatividad con la que se rige la COORSA.
+                     de asegurar el cumplimiento de la normatividad con la que se rige COORSA.
                 </p>
             </div>
                 <ul id="portfolio-flters">

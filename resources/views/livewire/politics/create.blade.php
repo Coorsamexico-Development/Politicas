@@ -9,7 +9,7 @@
                 </button>
             </div>
            <div class="modal-body">
-				<form enctype="multipart/form-data">
+		<form enctype="multipart/form-data">
             <div class="form-group">
                 <label for="namepolitica">Nombre:</label>
                 <input wire:model="namepolitica" type="text" class="form-control" id="namepolitica" placeholder="Nombre">@error('namepolitica') <span class="error text-danger">{{ $message }}</span> @enderror
