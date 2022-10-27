@@ -138,7 +138,7 @@ class Politics extends Component
 				$record->imagePolitic = $this->imagePolitic->store('imagePolitic', 'public');
 			}
 			if(!empty($this->pdf)){
-				Storage::disk('gsc')->delete($record->pdf);	
+				Storage::disk('gcs')->delete($record->pdf);	
 				$record->pdf = $this->pdf->store('pdf', 'public');
 	
 			}
